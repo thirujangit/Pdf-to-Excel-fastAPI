@@ -4,3 +4,4 @@ pandas
 tabula-py
 openpyxl
 python-multipart
+pdfplumber
