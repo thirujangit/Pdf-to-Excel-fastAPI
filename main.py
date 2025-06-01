@@ -35,3 +35,6 @@ async def convert_pdf_to_excel(file: UploadFile = File(...)):
     except Exception as e:
         traceback.print_exc()
         return JSONResponse(content={"error": str(e)}, status_code=500)
+@app.get("/")
+def read_root():
+    return {"message": "Hello from FastAPI on Render!"}
